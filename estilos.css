@@ -1,0 +1,1000 @@
+/*login*/
+#pagina-login {
+    background-color: #1e1e2f;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#pagina-login .wrapper {
+    width: 420px;
+    background-color: rgba(30, 30, 47, 0.9);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    color: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+/* logo animado */
+#pagina-login .logo-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagina-login .logo-plate {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ff6f61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#pagina-login .logo-cover {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    animation: liftCover 3s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#pagina-login .logo-food {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Itens simulando a comida */
+#pagina-login .food-item {
+    position: absolute;
+    border-radius: 50%;
+}
+#pagina-login .food1 {
+    width: 10px;
+    height: 10px;
+    background-color: #e65c50;
+    top: 10px;
+    left: 15px;
+}
+#pagina-login .food2 {
+    width: 8px;
+    height: 8px;
+    background-color: #ffc107;
+    top: 5px;
+    right: 10px;
+}
+#pagina-login .food3 {
+    width: 7px;
+    height: 7px;
+    background-color: #4caf50;
+    bottom: 10px;
+    left: 20px;
+}
+
+/* Animação de levantar a tampa */
+@keyframes liftCover {
+    0%, 100% {
+        bottom: 10px;
+        opacity: 1;
+    }
+    50% {
+        bottom: 50px;
+        opacity: 0;
+    }
+}
+
+#pagina-login h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #ff6f61;
+}
+
+#pagina-login .input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#pagina-login .input-box input {
+    width: 90%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #272930;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#pagina-login .input-box input:focus {
+    background-color: #3a3a4c;
+}
+
+#pagina-login .input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff6f61;
+}
+
+#pagina-login .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#pagina-login .remember-forgot label {
+    color: #ccc;
+}
+
+#pagina-login .remember-forgot a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#pagina-login .remember-forgot a:hover {
+    color: #fff;
+}
+
+#pagina-login .btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pagina-login .btn:hover {
+    background-color: #e65c50;
+}
+
+#pagina-login .register-link {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+#pagina-login .register-link a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#pagina-login .register-link a:hover {
+    color: #fff;
+}
+
+
+
+
+/*cadastro*/
+/*8888888888888888888888888888888888888888888888888888*/
+
+
+
+#pagina-cadastro {
+    font-family: 'Poppins', sans-serif;
+    background-color: #21202c;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#pagina-cadastro .wrapper {
+    width: 420px;
+    background-color: rgba(33, 32, 44, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+
+#pagina-cadastro .wrapper h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ff6f61;
+}
+
+#pagina-cadastro .input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#pagina-cadastro .input-box input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#pagina-cadastro .input-box i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#pagina-cadastro .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6f61;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+#pagina-cadastro .btn:hover {
+    background-color: #ff856f;
+}
+
+#pagina-cadastro .admin-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#pagina-cadastro .admin-checkbox input {
+    margin-right: 10px;
+}
+
+#pagina-cadastro .login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#pagina-cadastro .login-link a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+
+
+/*menu*/
+/*00000000000000000000000000000000000000000000000000000000*/
+
+
+
+#pagina-menu {
+    background-color: #1e1e2f;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+#pagina-menu .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #272930;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#pagina-menu .cart-icon {
+    font-size: 20px;
+    position: relative;
+    color: #ff6f61;
+    cursor: pointer;
+}
+
+#pagina-menu .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#pagina-menu .main-content {
+    padding: 20px;
+}
+
+#pagina-menu h1 {
+    margin: 20px 0;
+    font-size: 28px;
+    color: #ff6f61;
+}
+
+#pagina-menu .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#pagina-menu .product-card {
+    background-color: #272930;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#pagina-menu .product-card:hover {
+    transform: translateY(-5px);
+}
+
+#pagina-menu .product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 200px;
+}
+
+#pagina-menu .info {
+    margin-top: 10px;
+}
+
+#pagina-menu .price {
+    font-size: 18px;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+#pagina-menu .add-to-cart-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pagina-menu .add-to-cart-btn:hover {
+    background-color: #e65c50;
+}
+
+#pagina-menu .cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #272930;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 1000;
+}
+
+#pagina-menu .cart-sidebar h2 {
+    margin-top: 0;
+    color: #ff6f61;
+}
+
+#pagina-menu .close-btn {
+    background: none;
+    border: none;
+    color: #ff6f61;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#pagina-menu .checkout-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pagina-menu .checkout-btn:hover {
+    background-color: #e65c50;
+}
+
+#pagina-menu .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #3a3a4c;
+    border-radius: 5px;
+}
+
+#pagina-menu .remove-btn {
+    background: none;
+    border: none;
+    color: #ff6f61;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#pagina-menu .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#pagina-menu .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 3px 0;
+    transition: all 0.3s;
+}
+
+#pagina-menu .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #272930;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#pagina-menu .hamburger-menu.show {
+    display: flex;
+}
+
+#pagina-menu .hamburger-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+    font-size: 26px;
+}
+
+#pagina-menu .hamburger-menu a:hover {
+    background-color: #3a3a4c;
+}
+
+#pagina-menu .loading-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pagina-menu .loading-btn span {
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+
+#pagina-menu .loading-btn.loading span {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#pagina-menu .loading-btn.loading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #ff6f61;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+#pagina-menu .notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s;
+}
+
+
+/*Adimnistrador*/
+/*00000000000000000000000000000000000000000000000000000000000000000000*/
+
+
+#pagina-administrador {
+    background-color: #1e1e2f;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+#pagina-administrador .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #272930;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#pagina-administrador .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#pagina-administrador .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 3px 0;
+    transition: all 0.3s;
+}
+
+#pagina-administrador .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #272930;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#pagina-administrador .hamburger-menu.show {
+    display: flex;
+}
+
+#pagina-administrador .hamburger-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+    font-size: 26px;
+}
+
+#pagina-administrador .hamburger-menu a:hover {
+    background-color: #3a3a4c;
+}
+
+#pagina-administrador .main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+#pagina-administrador h1 {
+    margin: 20px 0;
+    font-size: 32px;
+    color: #ff6f61;
+}
+
+#pagina-administrador .hours-input {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+#pagina-administrador .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+#pagina-administrador .btn:hover {
+    background-color: #ff4d4d;
+}
+
+
+/*ajuda*/
+/*000000000000000000000000000000000000000000000000000000000000*/
+
+#pagina-ajuda {
+    background-color: #1e1e2f;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+#pagina-ajuda .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #272930;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#pagina-ajuda .cart-icon {
+    font-size: 20px;
+    position: relative;
+    color: #ff6f61;
+    cursor: pointer;
+}
+
+#pagina-ajuda .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#pagina-ajuda .main-content {
+    padding: 20px;
+}
+
+#pagina-ajuda h1 {
+    margin: 20px 0;
+    font-size: 28px;
+    color: #ff6f61;
+}
+
+#pagina-ajuda .profile-card {
+    background-color: #272930;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pagina-ajuda .profile-card h3 {
+    margin: 10px 0;
+    color: #ff6f61;
+}
+
+#pagina-ajuda .profile-info {
+    margin: 5px 0;
+}
+
+#pagina-ajuda .info-label {
+    font-weight: bold;
+}
+
+#pagina-ajuda .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#pagina-ajuda .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 3px 0;
+    transition: all 0.3s;
+}
+
+#pagina-ajuda .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #272930;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#pagina-ajuda .hamburger-menu.show {
+    display: flex;
+}
+
+#pagina-ajuda .hamburger-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+    font-size: 26px;
+}
+
+#pagina-ajuda .hamburger-menu a:hover {
+    background-color: #3a3a4c;
+}
+
+
+
+/*perfil*/
+/*00000000000000000000000000000000000000000000000000000000000000000000*/
+
+
+
+#pagina-perfil {
+    background-color: #1e1e2f;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+#pagina-perfil .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #272930;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#pagina-perfil .cart-icon {
+    font-size: 20px;
+    position: relative;
+    color: #ff6f61;
+    cursor: pointer;
+}
+
+#pagina-perfil .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#pagina-perfil .main-content {
+    padding: 20px;
+}
+
+#pagina-perfil h1 {
+    margin: 20px 0;
+    font-size: 28px;
+    color: #ff6f61;
+}
+
+#pagina-perfil .profile-card {
+    background-color: #272930;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pagina-perfil .profile-card h3 {
+    margin: 10px 0;
+    color: #ff6f61;
+}
+
+#pagina-perfil .profile-info {
+    margin: 5px 0;
+}
+
+#pagina-perfil .info-label {
+    font-weight: bold;
+}
+
+#pagina-perfil .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#pagina-perfil .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 3px 0;
+    transition: all 0.3s;
+}
+
+#pagina-perfil .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #272930;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#pagina-perfil .hamburger-menu.show {
+    display: flex;
+}
+
+#pagina-perfil .hamburger-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+    font-size: 26px;
+}
+
+#pagina-perfil .hamburger-menu a:hover {
+    background-color: #3a3a4c;
+}
+
+
+/*realizado*/
+/*000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+
+#pedidos-realizados {
+    background-color: #1e1e2f;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#pedidos-realizados .container {
+    background-color: #272930;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s ease;
+}
+
+#pedidos-realizados h1 {
+    font-size: 32px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+#pedidos-realizados p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#pedidos-realizados .logo-container {
+    margin: 20px 0; /* Espaçamento em cima e embaixo da logo */
+}
+
+#pedidos-realizados .logo {
+    width: 80px; /* Tamanho da logo */
+    height: 80px; /* Tamanho da logo */
+    animation: bounce 1s infinite; /* Animação de "bounce" */
+}
+
+#pedidos-realizados .order-info {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#pedidos-realizados .order-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#pedidos-realizados .order-info li {
+    margin: 5px 0;
+    animation: slideIn 0.5s forwards;
+}
+
+#pedidos-realizados .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+#pedidos-realizados .btn:hover {
+    background-color: #ff4d4d;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}

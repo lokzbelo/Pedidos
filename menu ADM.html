@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu ADM</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body id="pagina-menu">
+    <header class="header">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="cart-icon" id="cart-icon">
+            🛒 <span class="cart-count" id="cart-count">0</span>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu"> 
+            <a href="menu ADM.html">Início</a>
+            <a href="administrador.html">Administrador</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="ajuda.html">Ajuda</a>
+            <a href="index.html">Sair</a>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <h1>COMIDAS</h1>
+        <div class="product-grid" id="comidas-grid">
+        </div>
+
+        <h1>BEBIDAS</h1>
+        <div class="product-grid" id="bebidas-grid">
+        </div>
+    </main>
+
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <h2>Seu carrinho</h2>
+        <button class="close-btn" id="close-cart">←</button>
+        <div id="cart-items-container">
+        </div>
+        <button class="checkout-btn loading-btn" id="checkout-btn" onclick="submitOrder()">
+            <span>Enviar</span>
+        </button>
+    </aside>
+
+    <div id="notification" class="notification" style="display: none;"></div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body id="pagina-perfil">
+
+    <header class="header">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="hamburger-menu" id="hamburger-menu">
+            <a href="menu.html">Início</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="ajuda.html">Ajuda</a>
+            <a href="index.html">Sair</a>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <h1>PERFIL</h1>
+        <div class="profile-card">
+            <h3>Nome: <span class="profile-info">João da Silva</span></h3>
+            <p class="profile-info"><span class="info-label">E-mail:</span> joao.silva@example.com</p>
+            <p class="profile-info"><span class="info-label">Telefone:</span> (11) 91234-5678</p>
+            <p class="profile-info"><span class="info-label">Endereço:</span> Rua Exemplo, 123 - São Paulo, SP</p>
+        </div>
+
+        <!--último pedido -->
+        <div class="last-order">
+            <h3>Último Pedido Realizado:</h3>
+            <p id="last-order-info" class="profile-info">Nenhum pedido realizado.</p>
+        </div>
+    </main>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>

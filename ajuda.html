@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body id="pagina-ajuda">
+
+    <header class="header">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="hamburger-menu" id="hamburger-menu">
+            <a href="menu.html">Inicio</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="ajuda.html">Ajuda</a>
+            <a href="index.html">Sair</a>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <h1>INFRMAÇÕES</h1>
+        <div class="profile-card">
+            <h1>Suporte<span class="profile-info"></span></h1>
+            <p class="profile-info"><span class="info-label">E-mail:</span> plantadorDeBatata6dura6mole@gmail.com</p>
+            <p class="profile-info"><span class="info-label">Telefone:</span> (91) 99191-9191</p>
+            <p class="profile-info"><span class="info-label">Endereço:</span> Rua Exemplo, 123 - abaetetuba, pa, EM FRENTE AO FEFE</p>
+        </div>
+    </main> 
+
+    <script>
+        // Função para alternar o menu
+        function toggleMenu() {
+            const menu = document.getElementById('hamburger-menu'); // Seleciona o menu
+            menu.classList.toggle('show'); // Alterna a classe "show" para mostrar/ocultar o menu
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body id="pagina-cadastro">
+    <div class="wrapper">
+        <h1>Crie sua conta</h1>
+        <form action="index.html">
+            <div class="input-box">
+                <input type="text" placeholder="Nome" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="E-mail" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Senha" required minlength="8">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Repita a senha" required minlength="8">
+                <i class='bx bxs-lock'></i>
+            </div>
+            <div class="admin-checkbox">
+                <input type="checkbox" id="admin-account">
+                <label for="admin-account">Criar conta de Administrador</label>
+            </div>
+            <button type="submit" class="btn">Cadastrar</button>
+            <div class="login-link">
+                <p>Já tem uma conta? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

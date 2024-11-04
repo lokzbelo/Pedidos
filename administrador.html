@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adimin</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body id="pagina-administrador">
+
+    <header class="header">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="hamburger-menu" id="hamburger-menu">
+            <a href="menu.html">Inicio</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="ajuda.html">Ajuda</a>
+            <a href="index.html">Sair</a>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <h1>Area de gerenciamento</h1>
+        
+        <div class="hours-input">
+            <label for="opening-time">Hora de Abertura:</label>
+            <input type="time" id="opening-time" name="opening-time">
+        </div>
+
+        <div class="hours-input">
+            <label for="closing-time">Hora de Fechamento:</label>
+            <input type="time" id="closing-time" name="closing-time">
+        </div>
+
+        <div>
+            <button class="btn" id="order-list-btn">Lista de Pedidos</button>
+            <button class="btn" id="print-btn">Imprimir</button>
+        </div>
+    </main>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>
